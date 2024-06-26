@@ -1,1 +1,1 @@
-English practice for the Vietnamese speaking vendors down the street. Very rough, just helping out the people in the neighborhood.
+English practice for the Vietnamese-speaking vendors down the street. This is a rough build, just trying to help the people in the neighborhood who have asked me to help them with their English even though I'm not an English teacher.
