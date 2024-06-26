@@ -1,0 +1,39 @@
+/* https://www.color-hex.com/color-palette/30580
+https://www.color-hex.com/color-palette/2895 */
+
+.custom-table > tbody > tr {
+    border-top: 3px solid #dbdd15;
+    border-bottom: 3px solid #dbdd15;
+}
+
+.custom-tableRec > tbody > tr {
+    border-top: 3px solid #f5565b;
+    border-bottom: 3px solid #f5565b;
+}
+
+.english {
+    color: #dbdd15;
+}
+
+#repeatInputSave {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+#recordButton:hover, 
+#repeatButtonRec:hover {
+    transform: scale(1.2);
+  }
+
+.eng_Audio:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+
+#repeatButtonRec,#recordButton:hover {
+    cursor: pointer;
+}
+
+

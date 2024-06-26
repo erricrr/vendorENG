@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+{% extends "layout.html" %}
+<!-- {% block title %}Speak English for My Business{% endblock %} -->
+{% block content %}
+<h1 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">English Practice</h1>
+<div class="container" style="text-align: center;">
+    <div class="table-responsive">
+        <table class="table custom-tableRec">
+            <thead>
+                <tr>
+                  <th scope="col">Ghi âm giọng nói</th>
+                  <th scope="col">Nghe ghi âm</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                        <img style="margin-top: 10px;" title="record to respond" id="recordButton" src="static/img/record.svg" height="55px" width="55px" onclick="toggleRecording()">
+
+                      </td>
+                      <td>
+                        <img id="repeatButtonRec" title="listen to my response" src="static/img/repeatRec.svg" height="55px" width="55px" onclick="playRecording()">
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <div class="table-responsive">
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                  <th scope="col">Tiếng Việt</th>
+                  <th scope="col">English</th>
+                  <th scope="col">Nghe tiếng Anh</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                        <div>Bạn bán gì?</div>
+                        <hr>
+                        <div>hàu</div>
+                      </td>
+                      <td>
+                        <div class="english">What do you sell?</div>
+                        <hr>
+                        <div class="english">oysters</div>
+                      </td>
+                      <td>
+                        <img class="eng_Audio" title="listen to english" src="static/img/repeat.svg" height="55px" width="55px" onclick="engAudio('audio_1.mp3')">
+                          </div>
+                      </td>
+                    </tr>
+                <tr>
+                  <td>
+                      <div>Em bán gì?</div>
+                      <hr>
+                      <div>Em bán hàu nướng.</div>
+                    </td>
+                    <td>
+                      <div class="english">What do you sell?</div>
+                      <hr>
+                      <div class="english">I sell grilled oysters.</div>
+                  </td>
+                  <td>
+                    <img class="eng_Audio" title="listen to english" src="static/img/repeat.svg" height="55px" width="55px" onclick="engAudio('audio_2.mp3')">
+
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      <div>Anh bán gì?</div>
+                      <hr>
+                      <div>Hàu tươi nướng.</div>
+                    </td>
+                    <td>
+                      <div class="english">What do you sell?</div>
+                      <hr>
+                      <div class="english">Fresh, grilled oysters.</div>
+                  </td>
+                  <td>
+                    <img class="eng_Audio" title="listen to english" src="static/img/repeat.svg" height="55px" width="55px" onclick="engAudio('audio_3.mp3')">
+                </td>
+                </tr>
+                <tr>
+                  <td>
+                      <div>Bao nhiêu tiền một hàu?</div>
+                      <hr>
+                      <div>Năm nghìn đồng.</div>
+                    </td>
+                    <td>
+                      <div class="english">How much for one oyster?</div>
+                      <hr>
+                      <div class="english">Five thousand Dong.</div>
+                  </td>
+                  <td>
+                    <img class="eng_Audio" title="listen to english" src="static/img/repeat.svg" height="55px" width="55px" onclick="engAudio('audio_4.mp3')">
+                </td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/recording_funcs.js') }}"></script>
+{% endblock %}
